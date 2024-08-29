@@ -218,9 +218,9 @@ img{
 
 
 @media only screen and (max-width: 991px) /*phones, potrait tablets, large phones, landscape tablets*/ { 
-    /* body{
-        background: radial-gradient(circle, aqua 10%, black);
-    } */
+    body{
+        background: linear-gradient(to right, black, yellow 20% 80%, black);
+    } 
 
     .main{
         position: absolute;
