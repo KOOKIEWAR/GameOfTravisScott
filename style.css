@@ -1,0 +1,280 @@
+body{
+    background: radial-gradient(circle, yellow 10%, black);
+    display: flex;
+    justify-content: center;
+}
+
+button:hover, a:hover{cursor: pointer;}
+
+.header{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+}
+
+.header h2{
+    color: transparent;
+    text-shadow: 0 0 1px yellow, 0 0 5px red, 0 0 8px black;
+    text-transform: uppercase;
+}
+
+.header .barra{
+    border-radius: 20px;
+    height: 20px;
+    width: 300px;
+    padding:5px;
+    background: black;
+    margin: 0px auto 30px auto;
+}
+
+.barra .progress{
+    height: 20px;
+    width: 0px;
+    display:block;
+    border-radius: 20px;
+    background-color: red;
+    transition: all 1.5s ease-in-out;
+}
+
+.main{
+    position: absolute;
+    top:30%;
+}
+
+.Start{
+    width: 500px;
+}
+
+.Start .mod button{
+    display: block;
+    margin:20px auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    transition: all 0.2s ;
+}
+
+.Start .mod button:hover, .End .home:hover{
+    color:black;
+    background-color: gray;
+}
+
+.Start .magazine{
+    background-color: transparent;
+    background-image: url("https://cdn.icon-icons.com/icons2/1502/PNG/512/audioheadphones_103544.png");
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    position:absolute;
+    left: 0px;
+    top:50px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    border:0;
+    box-shadow: 0 0 5px yellow, 0 0 8px black;
+}
+
+
+.Start .rulesButton{
+    background-color: transparent;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/760/760172.png");
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    top:50px;
+    transition: all 0.2s;
+    border:0;
+    box-shadow: 0 0 5px yellow, 0 0 7px black;
+}
+
+.magazine:hover, .rulesButton:hover{
+    background-color: red;
+    width: 77px;
+    height: 77px;
+}
+
+.Start .rules{
+    position: absolute;
+    top:0px;
+    left:calc(250px - 150px);
+    background-color: black;
+    color:white;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    padding-top:30px
+}
+
+.Start .rules span{font-weight: bold;}
+
+.Vs{
+    width: 825px;
+    margin: auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Vs .firstFigure{
+    position: absolute;
+    left:0px;
+    text-align: center;
+    width: 250px;
+}
+
+.Vs .secondFigure{
+    position: absolute;
+    right:0px;
+    text-align: center;
+    width: 250px;
+}
+
+.Vs figure{
+    font-weight: bold;
+    font-size:20.5px;
+    color:black;
+}
+
+.Vs .voteBoth{
+    position: relative;
+    left: calc(412.5px - 26px);
+}
+
+.Vs figure img{border-radius: 20px;}
+
+.Vs button{
+    font-weight: bold;
+    color:white;
+    background-color: rgb(5, 5, 173);
+    border-radius: 20px;
+    border:0;
+    padding: 10px;
+    transition: all 0.2s;
+    box-shadow: 0 0 5px blue, 0 0 8px black;
+}
+
+.Vs button:hover{
+    background-color: rgb(6, 6, 104);
+    color:white;
+}
+
+.End{
+    font-size: 17.5 px;
+    font-weight: bold;
+    width: 520px;
+    text-align: center;
+}
+
+.End .home{
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    color:white;
+    background-color: black;
+    border-radius: 20px;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.Vs figure p{height: 55px;}
+
+.Vs a, .End a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.Vs a:hover, .End a:hover{
+    text-shadow: 0 0 5px black, 0 0 7px red;
+}
+
+::selection{
+    background-color: blue;
+    color:white;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+@media only screen and (max-width: 991px) /*phones, potrait tablets, large phones, landscape tablets*/ { 
+    /* body{
+        background: radial-gradient(circle, aqua 10%, black);
+    } */
+
+    .main{
+        position: absolute;
+        top:40%;
+    }
+
+    img{
+        width: 125px;
+        height: 125px;
+    }
+
+    .Vs figure{
+        font-weight: bold;
+        font-size:22.5px;
+        color:black;
+    }
+
+    .Vs{
+        width: 100%;
+        margin: auto;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Vs .firstFigure{
+        position: absolute;
+        left:0px;
+        text-align: center;
+        width: 125px;
+    }
+    
+    .Vs .secondFigure{
+        position: absolute;
+        right:0px;
+        text-align: center;
+        width: 125px;
+    }
+
+    .Vs .voteBoth{
+        position: fixed;
+        left: calc(225px - 26px);
+    }
+
+    .Start .magazine{
+        width: 75px;
+        height: 75px;
+        position:absolute;
+        left: 25%;
+        top:250px;
+    }
+    
+    
+    .Start .rulesButton{
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        right: 25%;
+        top:250px;
+    }
+}
+

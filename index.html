@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSq-8lxTqBuoNPtlubl7yyslS2hF3qo1u72g&s" />
+    
+    <title>GOTS</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <h2>Game Of Travis Scott</h2>
+        <div class="barra" id="barra"><span class="progress" id="progress"></span></div>
+    </div>
+
+    <div class="main Start" id="mainStart">
+        <span><a class="magazine" id="magazine" href="ListenAll/ListenAll.html"></a></span>
+        <div class="mod" id="mod">
+            <button class="buttonAlbum" id="buttonAlbum">ALBUM' SONG only</button>
+            <button class="buttonSingle" id="buttonSingle">SINGLES only</button>
+            <button class="buttonFeat" id="buttonFeat">FEAT. Travis Scott only</button>
+            <button class="buttonAll" id="buttonAll">ALL</button>
+        </div>
+        <button class="rulesButton" id="rulesButton"></button>
+        <div class="rules" id="rules" style="visibility: hidden;">
+            <span>
+                RULES<br><br>
+                5 random Cactus Jack songs will be taken based on the mode you choose
+                and will be compared. You will have to choose the best one or
+                if you can't choose click BOTH. At the end the ranking of the 5 songs will be calculated.
+                <br><br>
+                Click on song's name for listen.
+            </span>
+        </div>
+        <!--
+        <div>
+            <a href="#" class="linkSong1" id="linkSong1"><p class="nameSong1" id="nameSong1"></p></a>
+            <a href="#" class="linkSong2" id="linkSong2"><p class="nameSong2" id="nameSong2"></p></a>
+            <a href="#" class="linkSong3" id="linkSong3"><p class="nameSong3" id="nameSong3"></p></a>
+            <a href="#" class="linkSong4" id="linkSong4"><p class="nameSong4" id="nameSong4"></p></a>
+            <a href="#" class="linkSong5" id="linkSong5"><p class="nameSong5" id="nameSong5"></p></a>
+        </div>-->
+    </div>
+
+    <div class="main Vs" id="mainVs" style="display: none;">
+        
+        <figure class="firstFigure">
+            <img id="cover1" src=""/>
+            <a href="#" class="linkSong1" id="linkSong1"><p class="nameSong1" id="nameSong1"></p></a>
+            <button class="voteSong1" id="voteSong1">VOTE</button>
+        </figure>
+        <button class="voteBoth" id="voteBoth">BOTH</button>
+        <figure class="secondFigure">
+            <img id="cover2" src=""/>
+            <a href="#" class="linkSong2" id="linkSong2"><p class="nameSong2" id="nameSong2"></p></a>
+            <button class="voteSong2" id="voteSong2">VOTE</button>
+        </figure>
+    </div>
+
+    <div class="main End" id="mainEnd" style="display: none;">
+        <a href="#" class="linkSong End1" id="linkSongEnd1"><p class="nameSong End1" id="nameSongEnd1"></p></a>
+        <a href="#" class="linkSong End2" id="linkSongEnd2"><p class="nameSong End2" id="nameSongEnd2"></p></a>
+        <a href="#" class="linkSong End3" id="linkSongEnd3"><p class="nameSong End3" id="nameSongEnd3"></p></a>
+        <a href="#" class="linkSong End4" id="linkSongEnd4"><p class="nameSong End4" id="nameSongEnd4"></p></a>
+        <a href="#" class="linkSong End5" id="linkSongEnd5"><p class="nameSong End5" id="nameSongEnd5"></p></a>
+
+        <button class="home" id="home">HOME</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
