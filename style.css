@@ -198,7 +198,8 @@ button:hover, a:hover{cursor: pointer;}
 
 .Vs a, .End a{
     text-decoration: none;
-    color: black;
+    color: transparent;
+    text-shadow: 0 0 1px black, 0 0 5px orange, 0 0 8px yellow;
     transition: all 0.2s ease-in-out;
 }
 
@@ -297,11 +298,6 @@ img{
         font-weight: bold;
         width: 520px;
         text-align: center;
-    }
-
-    .End a{
-        color: transparent;
-        text-shadow: 0 0 1px black, 0 0 5px orange, 0 0 8px yellow;
     }
 }
 
